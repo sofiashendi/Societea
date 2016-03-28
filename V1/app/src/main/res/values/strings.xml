@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">societea</string>
+    <string name="tea_label">Pick a tea and start steepin\'!</string>
+    <string name="coming_soon">Our Facebook page is coming soon!</string>
+    <string name="share_app">share this app</string>
+    <string name="follow_us">follow us</string>
+    <string name="tea">tea</string>
+    <string name="tea_ready_1">Your</string>
+    <string name="tea_ready_2">tea is ready!</string>
+    <string name="email_subject">Check out this new app I found!</string>
+    <string name="email_message">I started using the Google App socitea and you should really check it out. We can steep multiple teas at the same time when we hang out!</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.societea.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_landscape" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC666666"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/intro">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/intro"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tea_label"
+                android:id="@+id/textView"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAllCaps="true"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="26dp"
+                    android:text="green"
+                    android:layout_marginRight="10dp"
+                    android:background="#60ad7a"
+                    android:textColor="#FFFFFF"
+                    style="@style/TeaButton"
+                    android:onClick="selectTea" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="26dp"
+                    android:text="black"
+                    android:layout_marginRight="10dp"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    style="@style/TeaButton"
+                    android:onClick="selectTea" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="26dp"
+                    android:text="oolong"
+                    android:layout_marginRight="10dp"
+                    android:background="#810b0b"
+                    android:textColor="#FFFFFF"
+                    style="@style/TeaButton"
+                    android:onClick="selectTea" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="26dp"
+                    android:text="white"
+                    android:background="#FFFFFF"
+                    android:textColor="#666666"
+                    style="@style/TeaButton"
+                    android:onClick="selectTea" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/timerView"
+                android:layout_weight="0"
+                android:layout_margin="10dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:text="@string/share_app"
+                style="@style/FooterButton"
+                android:onClick="shareApp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:text="@string/follow_us"
+                style="@style/FooterButton"
+                android:onClick="followLink" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
